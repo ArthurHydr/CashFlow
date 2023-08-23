@@ -80,6 +80,8 @@ while True:
 
         if investimento > 0 and retorno == 0:
             faturamento_acumulado -= investimento
+        elif investimento !=0 and retorno !=0:
+            faturamento_acumulado = faturamento_acumulado - investimento + retorno
         elif retorno > 0:
             faturamento_acumulado += retorno
 
